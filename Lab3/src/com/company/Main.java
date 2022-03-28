@@ -2,9 +2,11 @@ package com.company;
 
 import com.company.Classes.*;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+
 
     public static void main(String[] args) {
         //1. Proiectati o clasa CandyBox, care va continue campurile: flavor (String), origin (String) cu modificatorii de access corespunzatori.
@@ -95,7 +97,7 @@ public class Main {
             System.out.println("Sirul " + x + " este palindrom!");
         else
             System.out.println("Sirul " + x + " nu este palindrom!");
-        */
+
         //3. Scrieti un program care verifica daca doua siruri de caractere sunt anagrame. (ex: ramo, mora si roma sunt anagrame)
 
         String sir = scanner.nextLine();
@@ -128,5 +130,12 @@ public class Main {
                 System.out.println("Sunt anagrame");
         }
 
+        */
+
+        //Singleton function: get_object
+        PasswordMarker x = PasswordMarker.get_object("gigel");
+        
+        //System.out.println("Stantza" + 5);
+        System.out.println(x.getPassword());
     }
 }
