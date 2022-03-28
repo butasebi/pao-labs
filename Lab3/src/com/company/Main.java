@@ -81,7 +81,7 @@ public class Main {
 
         //2. Se citeste un sir de caractere de la tastatura, verificati daca este un palindrom.
         Scanner scanner = new Scanner(System.in);
-        /*
+
         String x = scanner.nextLine();
 
         //we assign to string y the string x so we can build a string in x with the size equal to size of y
@@ -130,12 +130,12 @@ public class Main {
                 System.out.println("Sunt anagrame");
         }
 
-        */
+
 
         //Singleton function: get_object
-        PasswordMarker x = PasswordMarker.get_object("gigel");
-        
+        PasswordMarker xx = PasswordMarker.get_object("gigel");
+
         //System.out.println("Stantza" + 5);
-        System.out.println(x.getPassword());
+        System.out.println(xx.getPassword());
     }
 }
