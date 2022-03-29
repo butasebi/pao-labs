@@ -14,7 +14,7 @@ public abstract class CandyBox {
         this.origin = origin;
     }
 
-    public double getVolume(){return 0;};
+    abstract public double getVolume();
 
     @Override
     public String toString() {
