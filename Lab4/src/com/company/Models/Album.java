@@ -1,6 +1,8 @@
 package com.company.Models;
 
-public class Album implements Comparable<Album>{
+import java.util.Comparator;
+
+public class Album implements Comparator<Album>, Comparable<Album>{
     String nume;
     String artist;
     double rating;
@@ -43,7 +45,7 @@ public class Album implements Comparable<Album>{
 
     @Override
     public String toString() {
-        return "Album{" +
+        return "\n" + "Album{" +
                 "nume='" + nume + '\'' +
                 ", artist='" + artist + '\'' +
                 ", rating=" + rating +
@@ -56,6 +58,16 @@ public class Album implements Comparable<Album>{
         this.artist = artist;
         this.rating = rating;
         this.anul_publicarii = anul_publicarii;
+    }
+
+    @Override
+    public int compare(Album album1, Album album2) {
+
+        if (album1.nume == album2.nume && album1.rating == album2.rating) return album1.anul_publicarii - album2.anul_publicarii;
+
+        if (album1.nume == album2.nume) return (int) (album1.rating - album2.rating);
+
+        return album1.nume.compareTo(album2.nume);
     }
 
     @Override

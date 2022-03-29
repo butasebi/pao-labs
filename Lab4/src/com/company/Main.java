@@ -37,7 +37,7 @@ public class Main {
 
         //2. Declarati o clasa Album care are campurile: nume, artist, rating si anul publicarii.
         //a. Sortati un array de albume pe baza numelui, rating-ului si anului publicarii. Folositi ambele interfete de comparare.
-
+        //b. Creati o clasa Main unde declarati array-ul si afisati-l inainte si dupa sortare
         Vector<Album> albums = new Vector<Album>();
         albums.add(new Album("The Marshall Mathers LP", "Eminem", 9.5, 2000));
         albums.add(new Album("Encore", "Eminem", 9.2, 2003));
@@ -46,7 +46,6 @@ public class Main {
         Collections.sort(albums);
 
         System.out.println(albums.toString());
-        //b. Creati o clasa Main unde declarati array-ul si afisati-l inainte si dupa sortare
 
         //3. Creati 4 interfete Minus, Plus, Mult si Div care contin cate o metoda aferenta numelui si are ca argument un numar de tipul float.
 
