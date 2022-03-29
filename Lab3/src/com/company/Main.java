@@ -17,9 +17,9 @@ public class Main {
         //c. O metoda abstracta getVolume()
         //d. Suprascrierea metodei toString()
 
-        CandyBox test = new CandyBox("Caramel", "Thailand");
+        //CandyBox test = new CandyBox("Caramel", "Thailand");
 
-        System.out.println(test.toString());
+        //System.out.println(test.toString());
         //Din ea derivati clasele Merci, Lindt, Milka. Pentru un design diferit, cutiile au diverse forme:
         //a. Lindt va contine length, width si height
         //b. Milka va fi un cilindru cu campurile radius si height
@@ -39,7 +39,7 @@ public class Main {
 
         //Criteria: We consider that two candyboxes are equal if they have the same origin, flavor and volume
 
-        Milka milk2 = new Milka(test.getFlavor(), test.getOrigin(), 5, 10);
+        Milka milk2 = new Milka("Caramel", "Thailand", 5, 10);
 
         System.out.println(milk1.equals(milk2));
 

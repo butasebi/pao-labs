@@ -2,7 +2,7 @@ package com.company.Classes;
 
 import java.util.Objects;
 
-public class CandyBox {
+public abstract class CandyBox {
     String flavor;
     String origin;
 
